@@ -120,8 +120,11 @@ function newsTweet(){
             temp += ' #' + articles[newsTweets].coins[i].tradingSymbol;
         }
 
-        
-        tweet.status = articles[newsTweets].description + temp + ' ' + articles[newsTweets].url;
+        var description = articles[newsTweet].description; 
+        if(description.length > 90){
+            description = description.substring(0, 90) + '...';
+        }
+        tweet.status = description + temp + ' ' + articles[newsTweets].url;
         console.log(tweet.status);
 
         //Will only iterate through the top 24 articles of the day and restart
