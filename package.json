@@ -1,0 +1,22 @@
+{
+  "name": "cryptoalert-twitterbot",
+  "version": "1.0.0",
+  "description": "A twitter bot which reports on news about cryptocurrencies",
+  "main": "bot.js",
+  "dependencies": {
+    "crypto-news-api": "^1.0.13",
+    "cryptocompare": "^0.5.0",
+    "node-fetch": "^2.1.2",
+    "twit": "^2.2.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cryptocurrency",
+    "twitterbot"
+  ],
+  "author": "Ziad Abdelkarim",
+  "license": "ISC"
+}
